@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Cloud Task Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff; /* Warna latar belakang */
+            color: #333;
+        }
+
+        header {
+            background: #000; /* Warna hitam */
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2rem;
+            color: #000; /* Warna hitam */
+        }
+
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .button-container a {
+            margin: 5px;
+            display: inline-block;
+            background: #000; /* Warna hitam */
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button-container a:hover {
+            background: #ffffff; /* Warna abu-abu lebih terang */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+            position: relative;
+        }
+
+        footer .share {
+            margin-bottom: 10px;
+        }
+
+        footer .credit {
+            margin: 0;
+            color: #000; /* Warna hitam */
+        }
+
+        @media (max-width: 768px) {
+            .heading {
+                font-size: 1.5rem;
+            }
+
+            .slider-container {
+                flex-direction: column;
+            }
+
+            .button-container a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-heart-pulse"></i> Portofolio Team 26</a>
+        <div id="menu-bar" class="fas fa-bars" data-toggle="collapse" data-target="#navbarResponsive"></div>
+        <nav class="navbar collapse" id="navbarResponsive">
+            <a href="#home">Home</a>
+            <a href="#speciality">Connect to</a>
+            <a href="#about">About Team</a>
+        </nav>
+    </header>    
+    <main>
+        <article>
+            <section class="home" id="home">
+                <div class="content">
+                    <h3>Learning Module</h3>
+                    <p>Red Hat System Administration I (RH124) | Capstone Project | Red Hat System Administration II (RH134) | Cloud Computing | IL Professional Soft Skills Training</p>
+                    <h2>IBM Academy : Hybrid Cloud & Red Hat</h2>
+                    <p>Infinite Learning partners with IBM to provide the Red Hat System Administrator independent study program. This program builds the foundation for essential Linux system administration tasks, including installation, network connectivity, physical storage management, and basic security administration. Students will also learn more advanced topics like storage management using LVM, SELinux management, and automated installations.</p>
+                </div>
+                <div class="image">
+                    <img src="assets/images/sysadmin.png" alt="System Administration" class="img-fluid">
+                </div>
+            </section>
+
+            <section class="speciality" id="speciality">
+                <h1 class="heading">Connect <span>with Team</span></h1>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide card">
+                            <div class="image">
+                                <img src="assets/images/riski.jpg" alt="Riski Pratama">
+                            </div>
+                            <div class="content">
+                                <h3>Riski Pratama</h3>
+                                <h1>Universitas Dinamika Bangsa</h1>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://www.instagram.com/riskipratama.10?igsh=MWNqeWEzOGQ0cGs0bQ==" target="_blank" class="btn"><i class="fab fa-instagram"></i> Connect on Instagram</a>
+                                <a href="https://www.linkedin.com/in/riski-pratama-686104253" target="_blank" class="btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="slide card">
+                            <div class="image">
+                                <img src="assets/images/michael owen.jpg" alt="Michael Owen">
+                            </div>
+                            <div class="content">
+                                <h3>Michael Owen</h3>
+                                <h1>Universitas Internasional Batam</h1>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://www.instagram.com/mowennn_?igsh=ZHZhdmZpNHIzengy" target="_blank" class="btn"><i class="fab fa-instagram"></i> Connect on Instagram</a>
+                                <a href="https://www.linkedin.com/in/michael-owen-b64846192" target="_blank" class="btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="slide card">
+                            <div class="image">
+                                <img src="assets/images/jefry.jpg" alt="Jefry">
+                            </div>
+                            <div class="content">
+                                <h3>Jefry</h3>
+                                <h1>Universitas Internasional Batam</h1>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://www.instagram.com/j_f_y_l_i/profilecard/?igsh=MW5xa2s3ZnRjZTBodw==" target="_blank" class="btn"><i class="fab fa-instagram"></i> Connect on Instagram</a>
+                                <a href="https://www.linkedin.com/in/jefry-287928248" target="_blank" class="btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="slide card">
+                            <div class="image">
+                                <img src="assets/images/Gifary.jpg" alt="Muhammad Gifary Madyan">
+                            </div>
+                            <div class="content">
+                                <h3>Muhammad Gifary Madyan</h3>
+                                <h1>Universitas Pembangunan Nasional Veteran Jakarta</h1>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://www.instagram.com/gifary_madyan/" target="_blank" class="btn"><i class="fab fa-instagram"></i> Connect on Instagram</a>
+                                <a href="https://www.linkedin.com/in/gifary-madyan-1760b730a/" target="_blank" class="btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="slide card">
+                            <div class="image">
+                                <img src="assets/images/atho.jpg" alt="Muhammad Atho’ullah Aziman">
+                            </div>
+                            <div class="content">
+                                <h3>Muhammad Atho’ullah Aziman</h3>
+                                <h1>Universitas Negeri Surabaya</h1>
+                            </div>
+                            <div class="button-container">
+                                <a href="https://www.instagram.com/athoaziman/" target="_blank" class="btn"><i class="fab fa-instagram"></i> Connect on Instagram</a>
+                                <a href="https://www.linkedin.com/in/muhammad-athoullah-aziman-023759216" target="_blank" class="btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="arrow next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <section class="about" id="about">
+                <h1 class="heading">About <span>Team</span></h1>
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Team 26</h3>
+                        <p>IBM Academy Hybrid Cloud & Red Hat</p>
+                        <p>Infinite Learning, a division of PT Kinema Systrans Multimedia (a subsidiary of Infinite Studios) under Citra Agramasinti Nusantara (Citramas Group).</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="share">
+            <a href="https://github.com/rclayskuy10/Team-HCRH" id="github-btn" class="btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+        <h1 class="credit">Created by Team 26<span> &copy; 2024</span> | HCRH</h1>
+    </footer>
+
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script>
+        let currentSlide = 0;
+
+        function changeSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            const slider = document.querySelector('.slider');
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
+</body>
+
+</html>
