@@ -80,3 +80,5 @@ jobs:
           echo "Creating new Route..."
           oc create route edge --service=${{ env.APP_NAME }} --insecure-policy=Redirect -n ${{ env.OPENSHIFT_NAMESPACE }}
         fi
+
+
