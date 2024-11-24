@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      APP_NAME: portofolio-kelompok-riski
+      APP_NAME: portofilio-kelompok-riski
       OPENSHIFT_NAMESPACE: omidiyanto-dev
       IMAGE_REGISTRY: quay.io
       IMAGE_TAGS: latest                       
@@ -23,7 +23,7 @@ jobs:
 
     - name: Build and Tag Image
       run: |
-        IMAGE_NAME=portofolio-kelompok-riski
+        IMAGE_NAME=portofilio-kelompok-riski
         TAG=latest
         podman build -t quay.io/${{ secrets.QUAY_USERNAME }}/$IMAGE_NAME:$TAG .
 
@@ -36,7 +36,7 @@ jobs:
 
     - name: Push Image to Quay.io
       run: |
-        IMAGE_NAME=portofolio-kelompok-riski
+        IMAGE_NAME=portofilio-kelompok-riski
         TAG=latest
         podman push quay.io/${{ secrets.QUAY_USERNAME }}/$IMAGE_NAME:$TAG
 
